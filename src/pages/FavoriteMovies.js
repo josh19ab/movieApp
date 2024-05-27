@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const FavoriteMovies = () => {
   const favorites = useSelector((state) => state.favorites.favorites);
 
-  console.log("Favorites state:", favorites); // Log the favorites state
+  console.log("Favorites state:", favorites); 
 
   if (favorites.length === 0) {
     return <div>No favorite movies added yet.</div>;
