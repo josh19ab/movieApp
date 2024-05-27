@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-gray-100 text-gray-900;
+  }
+  
+  .movie-card {
+    @apply p-4 bg-white shadow-md rounded-lg cursor-pointer transform hover:scale-105 transition-transform;
+  }
+  
+  .movie-card img {
+    @apply w-full h-64 object-cover rounded-t-lg;
+  }
+  
+  .movie-card h2 {
+    @apply mt-2 text-lg font-bold;
+  }
+  
+  .movie-card p {
+    @apply mt-1 text-sm;
+  }
+  
+  .movie-card button {
+    @apply mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700;
+  }
+  
+  .movie-list, .favorite-movies {
+    @apply grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+  
